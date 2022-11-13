@@ -1,0 +1,414 @@
+@use 'hero';
+
+$color-principal:#131313;
+$color-gris:#2B2B2B;
+$color-gris2:#868686;
+$color-blanco:rgb(245, 245, 245);
+$color-rojo:#CB0909;
+$color-gradiente:rgba(0, 0, 0, 0.5);
+$color-black: black;
+
+body {
+    margin: 0;
+    background-color: $color-principal;
+    font-family: 'Roboto', sans-serif;
+    color: $color-blanco;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    display: flex;
+    text-align: left;
+    line-height: 3.2rem;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+    display: flex;
+    text-align: left;
+}
+
+button {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border-radius: 10px;
+    border-style: none;
+    color: $color-blanco;
+    background-color:$color-gris;
+    margin: 1rem;
+}
+
+ul li {
+    display: flex;
+    text-align: left;
+    align-items: left;
+
+
+}
+
+button:hover {
+    background-color: $color-rojo;
+}
+
+.contenedornew {
+    margin: 4em;
+}
+
+.tienda_listas {
+    text-align: left;
+}
+
+.galery {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+}
+
+
+header {
+    background-color: $color-principal;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header .logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+
+nav,
+a {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: $color-gris2;
+    font-family: 'roboto', sans-serif;
+    text-decoration: none
+}
+
+.texto {
+    display: flex;
+    align-items: center;
+    line-height: 2.5rem;
+}
+
+.image {
+    display: inline-block;
+    max-width: 100%;
+    width: 60%;
+    height: 60%;
+    margin: 2rem;
+    align-items: center;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.image_2 {
+    display: inline-block;
+    max-width: 100%;
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+    margin: 2rem;
+    align-items: center;
+}
+
+.image_3 {
+    display: inline-block;
+    max-width: 80%;
+    width: 100%;
+    height: 100%;
+    margin: 2rem;
+    align-items: center;
+    border-radius: 360px;
+    align-items: center;
+}
+
+.image_4 {
+    display: inline-block;
+    max-width: 100%;
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+    margin: 2rem;
+    align-items: center;
+}
+
+.image_5 {
+    display: inline-block;
+    max-width: 100%;
+    width: 60%;
+    height: 65%;
+    border-radius: 10px;
+    margin: 2rem;
+    align-items: center;
+}
+
+.image_6 {
+    display: inline-block;
+    max-width: 90%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 2rem;
+    align-items: center;
+}
+
+.image_7 {
+
+    display: inline-block;
+    max-width: 70%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 2rem;
+    align-items: center;
+}
+
+.image_8 {
+    display: inline-block;
+    max-width: 100%;
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    margin: 2rem;
+    align-items: center;
+}
+
+.div-contact {
+    display: flex;
+    width: 30%;
+}
+
+.img {
+    max-width: 60%;
+    margin: 3rem;
+    padding: 3rem;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.except {
+    max-width: 100%;
+    margin: 2rem;
+    padding: 2rem;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.image_rubik {
+    max-width: 60%;
+    margin: 1rem;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    margin: 2rem;
+    padding: 1.5rem;
+}
+
+.footer-space {
+    margin-left: .9rem;
+    margin-right: .9rem;
+}
+
+.centerimg {
+    display: inline-block;
+    margin: 0px;
+    padding: 0%;
+
+}
+
+a:hover {
+    color: $color-rojo
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 600px;
+    background-image:
+        linear-gradient(0deg,
+            $color-gradiente,
+            $color-gradiente), url("../img/index/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 600px;
+
+    background-image:
+        linear-gradient(0deg,
+            $color-gradiente,
+            $color-gradiente), url("../img/index/hero_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 600px;
+    background-color: $color-blanco;
+    background-image:
+        linear-gradient(0deg,
+            $color-gradiente,
+            $color-gradiente), url("../img/index/hero_3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#hero_4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 600px;
+    background-color: $color-black;
+    background-image:
+        linear-gradient(0deg,
+            $color-gradiente,
+            $color-gradiente), url("../img/index/hero_4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero_5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 600px;
+    background-color: $color-black;
+    background-image:
+        linear-gradient(0deg,
+            $color-gradiente,
+            $color-gradiente), url("../img/index/hero_5.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#welcome {
+    background-color: $color-blanco;
+    color: $color-black;
+}
+
+#welcome .container {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#presentation {
+    background-color: $color-black;
+}
+
+#presentation .container {
+    text-align: center;
+    justify-content: center;
+    padding: 100px 20px;
+}
+
+#aprendizaje {
+    background-color: $color-blanco;
+    color: $color-black;
+}
+
+#aprendizaje .container {
+    text-align: center;
+    justify-content: center;
+    padding: 100px 20px;
+}
+
+#galería {
+    background-color: $color-black;
+}
+
+#galería .container {
+    text-align: center;
+    justify-content: center;
+    padding: 100px 20px;
+}
+
+#tienda_1 {
+    background-color: $color-black;
+    color: $color-blanco;
+    margin: 1rem $color-black;
+
+}
+
+#tienda_1 .container {
+    text-align: center;
+    justify-content: center;
+    padding: 100px 20px;
+}
+
+#tienda_2 {
+    background-color: $color-black;
+    color: $color-blanco;
+    margin: 1rem $color-black;
+}
+
+#tienda_2 .container {
+    text-align: center;
+    justify-content: center;
+    padding: 100px 20px;
+}
